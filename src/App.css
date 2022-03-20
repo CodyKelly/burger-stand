@@ -23,6 +23,10 @@ body {
   font-size: 1rem;
 }
 
+p {
+  margin: 1rem 0px;
+}
+
 .card {
   border-radius: 10px;
   border: var(--standard-border);
@@ -54,6 +58,18 @@ h3 {
   width: 100%;
   height: 100%;
   margin: auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.sm-width {
+  max-width: 350px;
+}
+
+.md-width {
+  max-width: 500px;
 }
 
 input {
