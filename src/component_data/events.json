@@ -1,0 +1,46 @@
+{
+  "events": 
+  [
+    [
+      {
+        "type": "comment",
+        "value": "Introduces player to game and lets them name their stand"
+      },
+      {
+        "type": "style",
+        "value": {"maxWidth": "300px" }
+      },
+      {
+        "type": "h1",
+        "value": "Welcome"
+      },
+      {
+        "type": "p",
+        "value": "...to your new burger stand!"
+      },
+      {
+        "type": "p",
+        "value": "As you gaze proudly upon the ramshackle eatery you pieced together in the last five minutes, you realize you don't yet have a name for this fine establishment!"
+      },
+      {
+        "type":"p",
+        "value":"Let's give your stand a name:"
+      },
+      {
+        "type": "form",
+        "value": [
+          {
+            "type": "input",
+            "subtype": "text",
+            "value": ""
+          },
+          {
+            "input": "submit",
+            "className": "btn",
+            "value": "Let's go!"
+          }
+        ]
+      }
+    ]
+  ]
+}
