@@ -9,7 +9,8 @@ const buildElement = (elementObject) => {
     return null;
   }
 
-  const { type, subType, contents, children, className, value } = elementObject;
+  const { type, subType, contents, children, className, value, placeholder } =
+    elementObject;
   const TagType = type; // Create a dynamic tag base on its type
   if (children) {
     console.log(children);
@@ -36,6 +37,7 @@ const buildElement = (elementObject) => {
         key={uuidV4()}
         type={subType ? subType : undefined}
         value={value ? value : undefined}
+        placeholder={placeholder ? placeholder : undefined}
       />
     );
   }

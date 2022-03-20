@@ -28,7 +28,7 @@
             {
               "type": "input",
               "subType": "text",
-              "value": ""
+              "placeholder": "enter name here"
             },
             {
               "type": "input",

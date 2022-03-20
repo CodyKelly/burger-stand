@@ -9,7 +9,8 @@
   --dark-color: rgb(63, 63, 63);
   --lighten-percentage: 20%;
   --darken-precentage: 15%;
-  --standard-border: 3px solid var(--dark-color);
+  --md-border: 3px solid var(--dark-color);
+  --lg-border: 5px solid var(--dark-color);
 }
 
 * {
@@ -27,9 +28,13 @@ p {
   margin: 1rem 0px;
 }
 
+li {
+  margin: 0 3rem;
+}
+
 .card {
   border-radius: 10px;
-  border: var(--standard-border);
+  border: var(--lg-border);
   padding: 1rem;
   background: var(--med-color);
   width: fit-content;
@@ -65,7 +70,7 @@ h3 {
 }
 
 .sm-width {
-  max-width: 350px;
+  width: 350px;
 }
 
 .md-width {
@@ -77,7 +82,7 @@ input {
   display: block;
   width: 100%;
   padding: 0.5rem;
-  border: var(--standard-border);
+  border: var(--md-border);
   font-size: 1.15rem;
 }
 
