@@ -50,6 +50,7 @@ h3 {
 .btn {
   display: inline-block;
   background: var(--light-color);
+  cursor: pointer;
 }
 
 .btn:hover {

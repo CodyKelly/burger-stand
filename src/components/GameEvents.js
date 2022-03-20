@@ -4,17 +4,9 @@ import { v4 as uuidV4 } from 'uuid';
 
 // Given a JSON object with attributes, creates a React element
 const buildElement = (elementObject) => {
-  // Ignore comments
-  if (elementObject.type === 'comment') {
-    return null;
-  }
-
   const { type, subType, contents, children, className, value, placeholder } =
     elementObject;
   const TagType = type; // Create a dynamic tag base on its type
-  if (children) {
-    console.log(children);
-  }
   if (type !== 'input') {
     return (
       <TagType
@@ -43,13 +35,12 @@ const buildElement = (elementObject) => {
   }
 };
 
-const Events = () => {
-  const { events } = eventData;
-  let count = 0;
-  return events.map((event) => {
+const GameEvents = () => {
+  const { gameEvents } = eventData;
+  return gameEvents.map((gameEvent) => {
     return (
-      <div key={uuidV4()} className={'card ' + event.extraClasses}>
-        {event.contents.map((element) => {
+      <div key={uuidV4()} className={'card ' + gameEvent.extraClasses}>
+        {gameEvent.contents.map((element) => {
           return buildElement(element);
         })}
       </div>
@@ -57,4 +48,4 @@ const Events = () => {
   });
 };
 
-export default Events;
+export default GameEvents;

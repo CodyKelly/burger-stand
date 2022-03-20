@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
-import Events from './components/Event';
+import GameEvents from './components/GameEvents';
 import './App.css';
 
 function App() {
   return (
     <div className='center-contents'>
-      <Events />
+      <GameEvents />
     </div>
   );
 }
