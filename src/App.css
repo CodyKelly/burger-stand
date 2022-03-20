@@ -1,0 +1,76 @@
+:root {
+  --main-color: rgb(66, 66, 253);
+  --warning-color: rgb(255, 255, 59);
+  --alert-color: rgb(255, 28, 28);
+  --success-color: rgb(31, 223, 31);
+  --success-color-d: rgb(21, 160, 21);
+  --light-color: rgb(236, 236, 236);
+  --med-color: rgb(182, 182, 182);
+  --dark-color: rgb(63, 63, 63);
+  --lighten-percentage: 20%;
+  --darken-precentage: 15%;
+  --standard-border: 3px solid var(--dark-color);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.card {
+  border-radius: 10px;
+  border: var(--standard-border);
+  padding: 1rem;
+  background: var(--med-color);
+  width: fit-content;
+  height: fit-content;
+}
+
+.card h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--light-color);
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
+.center-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+input {
+  margin-top: 0.8rem;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: var(--standard-border);
+  font-size: 1.15rem;
+}
+
+input[type='text'] {
+}
+
+input[type='submit'] {
+  border-radius: 5px;
+  background-color: var(--success-color);
+  color: var(--light-color);
+  border-color: var(--success-color-d);
+}
